@@ -1,0 +1,33 @@
+{
+  "Products": [
+    {
+      "productName": "Coffee One",
+      "productImage": "coffee1.jpg",
+      "productShortDesc": "This is a great bike for beginners.",
+      "productLongDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui quasi rerum temporibus minus, hic, totam vero rem nulla odio repellendus corrupti blanditiis impedit quis autem iusto vitae deserunt aliquam.",
+      "productPrice": "159.99"
+    },
+    {
+      "productName": "Coffee Two",
+      "productImage": "coffee2.jpg",
+      "productShortDesc": "This is a great race bike.",
+      "productLongDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui quasi rerum temporibus minus, hic, totam vero rem nulla odio repellendus corrupti blanditiis impedit quis autem iusto vitae deserunt aliquam.",
+      "productPrice": "1059.99"
+    },
+    {
+      "productName": "Coffee Three",
+      "productImage": "coffee3.jpg",
+      "productShortDesc": "This may work for ramps.",
+      "productLongDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui quasi rerum temporibus minus, hic, totam vero rem nulla odio repellendus corrupti blanditiis impedit quis autem iusto vitae deserunt aliquam.",
+      "productPrice": "659.99"
+    },
+    {
+      "productName": "Coffee Four",
+      "productImage": "coffee4.jpg",
+      "productShortDesc": "This is a more advanced bike. Not for beginners.",
+      "productLongDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui quasi rerum temporibus minus, hic, totam vero rem nulla odio repellendus corrupti blanditiis impedit quis autem iusto vitae deserunt aliquam.",
+      "productPrice": "859.99"
+    }
+  ],
+  "Cart": []
+}
