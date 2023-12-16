@@ -186,7 +186,7 @@
     <div id="cart" style="display: none;">
         <h2>Your Cart</h2>
         <ul id="cartItems"></ul>
-        <button onclick="checkout()">Buy Now</button>
+        <button onclick="buyNow()">Buy Now</button>
     </div>
 
     <!-- Product Grid -->
@@ -324,10 +324,10 @@
             document.getElementById('cart').style.display = 'block';
         }
 
-        function checkout() {
-            // This is a placeholder for the checkout process
-            alert('Redirecting to payment...');
-            // In a real application, you would handle payment processing, order placement, etc.
+        function buyNow() {
+            // Perform actions when the Buy Now button is clicked
+            alert('Thank you for your purchase!');
+            // You can add additional functionality here, like redirecting to a checkout page or processing payment.
         }
 
         function openModal() {
