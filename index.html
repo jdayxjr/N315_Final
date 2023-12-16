@@ -2,49 +2,173 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Working | Cart</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <meta charset="UTF-8">
+    <title>Simple Shopping Cart</title>
+    <style>
+        /* Add your CSS styles here */
+        /* Style the product grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the cart */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        nav {
+            height: 30px;
+            background-color: #BBADA0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
 
 <body>
-  <div class="noti-banner">Get Gifts on time: Standard Delivery 12/16/23 ♦ Express Delivery 12/18/23 ♦ Expedited
-    Delivery
-    12/19/23 <span id="noti-close-icon">X</span></div>
-  <div class="logo-search-box">
-    <h1 class="logo">iCoffee<div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
 
-      </div>
-      <a id="login-btn " href="">Login In <i class="fa-solid fa-user"></i></a>
-      <a href="">support<i class="fa-solid fa-hands-holding-heart"></i></a>
-    </h1>
-  </div>
-  <nav>
-    <a href="#home">home</a>
-    <a href="">beverages</a>
-    <a href="">cofee makers</a>
-    <a href="">accesories</a>
-    <a href="#cart" class="cartIcon">
-      <div class="cartCounter">0</div>
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    </a>
-  </nav>
-  <div class="bottom-banner">
-    <p>$140 off I-Elite iCoffee maker see details | Up to 30% off Price Drop - New Variations Added! | Save and get $80
-      and get the K-select iCoffee Maker for $49.99 | Save $50 and get the i-Slim iCoffee maker for $89.99</p>
-  </div>
-  <div id="app"></div>
-  <div id="app"></div>
-  <script src="lib/jquery-3.7.1.min.js"></script>
-  <script src="app/app.js"></script>
+    <div>
+
+        <nav>
+            <h1>icoffee</h1>
+            <a href="#home">home</a>
+            <a href="">beverages</a>
+            <a href="">cofee makers</a>
+            <a href="">accesories</a>
+            <a href="">Login</a>
+        </nav>
+
+    </div>
+
+    <header>
+        <h3>Your cart</h3>
+        <a href="#" onclick="showCart()">Cart (<span id="cartCount">0</span>)</a> <i class="fa fa-shopping-cart"
+            aria-hidden="true"></i>
+    </header>
+
+    <!-- Product Grid -->
+    <div class="products">
+        <!-- Sample Products -->
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20</p>
+            <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- Cart Section (Initially hidden) -->
+    <div id="cart" style="display: none;">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        let cartItems = [];
+
+        function addToCart(productName, price) {
+            cartItems.push({ name: productName, price: price });
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartList = document.getElementById('cartItems');
+            cartList.innerHTML = '';
+            let cartTotal = 0;
+
+            cartItems.forEach(item => {
+                cartList.innerHTML += `<li>${item.name} - $${item.price}</li>`;
+                cartTotal += item.price;
+            });
+
+            document.getElementById('cartCount').innerText = cartItems.length;
+        }
+
+        function showCart() {
+            updateCartUI();
+            document.getElementById('cart').style.display = 'block';
+        }
+
+        function checkout() {
+            // This is a placeholder for the checkout process
+            alert('Redirecting to payment...');
+            // In a real application, you would handle payment processing, order placement, etc.
+        }
+    </script>
 </body>
 
 </html>
