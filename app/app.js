@@ -100,3 +100,26 @@ function initURLListener() {
 $(document).ready(function () {
   initURLListener();
 });
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBW_ti-DqqGWcEG2dAF4k9kNQ7Y-pnf3uo",
+  authDomain: "n315-final-jd.firebaseapp.com",
+  projectId: "n315-final-jd",
+  storageBucket: "n315-final-jd.appspot.com",
+  messagingSenderId: "159511963033",
+  appId: "1:159511963033:web:98fb7c906b382ff50ddf08",
+  measurementId: "G-KR05ZGPNN3"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

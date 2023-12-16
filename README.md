@@ -6,4 +6,4 @@
 
 ## link
 
-https://console.firebase.google.com/u/0/project/n315-final-jd/
+https://n315-final-jd.web.app
