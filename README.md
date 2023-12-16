@@ -7,3 +7,7 @@
 ## link
 
 https://n315-final-jd.web.app
+
+## firebase issues was able to install firebase into application but still had issues setting it up for my webpage
+
+## overall everything works just couldnt get firebase set up
